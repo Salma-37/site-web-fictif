@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Accueil</title>
+  <meta name="description" content="NovaCorp, entreprise fictive spécialisée en stratégie digitale, développement web et solutions créatives.">
+  <meta property="og:title" content="NovaCorp - Accueil">
+  <meta property="og:description" content="Découvrez NovaCorp, ses services, son équipe et ses solutions digitales.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="images/icone.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">NovaCorp</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="pages/about.html">À propos</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/gallery.html">Galerie</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/hero.jpg">
+      <source media="(min-width: 769px)" srcset="images/hero.jpg">
+      <img src="images/hero.jpg" alt="Équipe de NovaCorp en réunion" class="hero-image">
+    </picture>
+
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Construisons votre présence digitale</h1>
+        <p>NovaCorp accompagne les entreprises avec des solutions web, créatives et stratégiques.</p>
+        <div class="hero-buttons">
+          <a href="pages/services.html" class="btn">Découvrir nos services</a>
+          <a href="pages/contact.html" class="btn btn-outline">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-title">
+      <h2>Nos services</h2>
+      <p>Des prestations adaptées aux besoins des entreprises modernes.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <img src="images/service1.jpg" alt="Développement web">
+        <h3>Développement web</h3>
+        <p>Création de sites vitrines, plateformes métiers et expériences responsive.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/service2.jpg" alt="Marketing digital">
+        <h3>Marketing digital</h3>
+        <p>Visibilité, contenu, réseaux sociaux et campagnes performantes.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/service3.jpg" alt="Design et branding">
+        <h3>Design & branding</h3>
+        <p>Identité visuelle, interfaces modernes et cohérence de marque.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-title">
+      <h2>Témoignages</h2>
+      <p>Quelques retours de clients satisfaits.</p>
+    </div>
+
+    <div class="testimonials">
+      <blockquote class="testimonial">
+        <p>“NovaCorp a transformé notre site en une véritable vitrine professionnelle.”</p>
+        <cite>— Client A</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>“Équipe sérieuse, créative et très réactive. Nous recommandons vivement.”</p>
+        <cite>— Client B</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>“Le résultat est propre, rapide et parfaitement adapté à nos besoins.”</p>
+        <cite>— Client C</cite>
+      </blockquote>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>NovaCorp</h3>
+      <p>Entreprise fictive spécialisée dans les solutions digitales et créatives.</p>
+    </div>
+
+    <div>
+      <h3>Plan du site</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/about.html">À propos</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/gallery.html">Galerie</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Mentions légales</h3>
+      <p>Site pédagogique fictif.</p>
+    </div>
+  </div>
+
+  <p class="footer-bottom">&copy; <span id="year"></span> NovaCorp - Tous droits réservés</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
