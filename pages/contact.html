@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCorp - Contact</title>
+  <meta name="description" content="Contactez NovaCorp pour discuter de votre projet.">
+  <meta property="og:title" content="NovaCorp - Contact">
+  <meta property="og:description" content="Formulaire de contact, carte et coordonnées de NovaCorp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../images/hero.jpg">
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="../index.html" class="logo">NovaCorp</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="../index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="section-title">
+    <h1>Contact</h1>
+    <p>Parlez-nous de votre projet ou posez-nous vos questions.</p>
+  </div>
+
+  <div class="contact-layout">
+    <section class="contact-form-card">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="entreprise">Entreprise</label>
+          <input type="text" id="entreprise" name="entreprise">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service recherché</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choisir un service --</option>
+            <option>Développement web</option>
+            <option>Design UI/UX</option>
+            <option>Marketing digital</option>
+            <option>Maintenance</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Budget estimé</label>
+          <input type="range" id="budget" name="budget" min="1000" max="10000" step="500" value="3000">
+          <p class="range-value">Valeur : <span id="budgetValue">3000</span> DH</p>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date souhaitée</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-group">
+          <label for="siteweb">Site web actuel</label>
+          <input type="url" id="siteweb" name="siteweb" placeholder="https://exemple.com">
+        </div>
+
+        <div class="form-group">
+          <label for="couleur">Couleur préférée</label>
+          <input type="color" id="couleur" name="couleur" value="#1e3a5f">
+        </div>
+
+        <div class="form-group">
+          <label>Type de projet</label>
+          <div class="inline-options">
+            <label><input type="radio" name="typeProjet" value="site vitrine" required> Site vitrine</label>
+            <label><input type="radio" name="typeProjet" value="e-commerce"> E-commerce</label>
+            <label><input type="radio" name="typeProjet" value="application"> Application</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Besoins complémentaires</label>
+          <div class="inline-options">
+            <label><input type="checkbox" name="besoins" value="seo"> SEO</label>
+            <label><input type="checkbox" name="besoins" value="branding"> Branding</label>
+            <label><input type="checkbox" name="besoins" value="maintenance"> Maintenance</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fichier">Document à joindre</label>
+          <input type="file" id="fichier" name="fichier">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label><input type="checkbox" required> J'accepte d'être recontacté(e)</label>
+        </div>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+
+    <aside class="contact-info-card">
+      <h2>Nos coordonnées</h2>
+      <p><strong>Adresse :</strong> 120 Avenue Digital, Casablanca</p>
+      <p><strong>Téléphone :</strong> +212 6 00 00 00 00</p>
+      <p><strong>Email :</strong> contact@novacorp.ma</p>
+      <p><strong>Horaires :</strong> Lun - Ven, 9h00 - 18h00</p>
+
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Casablanca&output=embed"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Carte de Casablanca">
+        </iframe>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>NovaCorp</h3>
+      <p>Entreprise fictive spécialisée dans les solutions digitales et créatives.</p>
+    </div>
+
+    <div>
+      <h3>Plan du site</h3>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Mentions légales</h3>
+      <p>Site pédagogique fictif réalisé en HTML, CSS et JavaScript.</p>
+    </div>
+  </div>
+
+  <p class="footer-bottom">&copy; <span id="year"></span> NovaCorp - Tous droits réservés</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
